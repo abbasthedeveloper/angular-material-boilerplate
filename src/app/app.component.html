@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2> Angular Material Demo's </h2>
+
+<button mat-raised-button color="primary" (click)="btnClick()">Click me!</button>
+<p>
+<mat-form-field>
+    <input matInput [matDatepicker]="dp3" placeholder="Input disabled" disabled>
+    <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+    <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+</mat-form-field>
+</p>
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Im a Toolbar</span>
+      <span class="example-spacer"></span>
+      <mat-icon class="example-icon" matTooltip="My Favourites">favorite</mat-icon>
+      <mat-icon class="example-icon" matTooltip="Delete">delete</mat-icon>
+      <mat-icon matBadge="15" matBadgeColor="warn" matTooltip="My Notifications">notifications_active</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>
